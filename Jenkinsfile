@@ -29,7 +29,7 @@ pipeline {
       }
       steps {
         container('docker') {
-          sh "docker build -t ${env.TAG_DEV} ."
+          sh "docker build -t ${env.TAG_DEV} \."
         }
       }
     }
